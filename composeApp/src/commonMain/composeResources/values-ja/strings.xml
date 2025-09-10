@@ -1,0 +1,22 @@
+<resources>
+    <string name="lightbulb">Lightbulb</string>
+    <string name="switch">Switch</string>
+    <string name="humidity">Humidity</string>
+    <string name="thermostat">Thermostat</string>
+
+    <string name="onboarding_welcome">ようこそ\nHouse Helperへ!</string>
+    <string name="onboarding_welcome_subtitle">日々の暮らしに寄り添う、スマートホームコンパニオン</string>
+    <string name="onboarding_about">スマートホームデバイスを、簡単かつ快適に操作しましょう</string>
+    <string name="onboarding_about_subtitle">照明や温度などを、このアプリ一つで管理できます</string>
+    <string name="onboarding_done">あなたのスマートホーム体験は、ここから始まります</string>
+    <string name="onboarding_done_subtitle">さあ、未来のホームオートメーションを体験しましょう</string>
+    <string name="onboarding_next_button">次へ</string>
+    <string name="device_action_share">Share</string>
+
+    <string name="dashboard_section_collapsed">Collapsed</string>
+    <string name="dashboard_section_expanded">Expanded</string>
+
+    <string name="dashboard_tab_rooms">Rooms</string>
+    <string name="dashboard_tab_settings">Settings</string>
+</resources>
+
