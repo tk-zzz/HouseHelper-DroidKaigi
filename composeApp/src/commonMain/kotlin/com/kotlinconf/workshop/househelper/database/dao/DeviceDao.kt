@@ -53,4 +53,10 @@ interface DeviceDao {
 
     @Query("UPDATE devices SET name = :name WHERE id = :deviceId")
     suspend fun updateDeviceName(deviceId: String, name: String)
+
+    @Query("UPDATE devices SET isFavorite = NOT isFavorite WHERE id = :deviceId")
+    suspend fun toggleFavorite(deviceId: String)
+
+    @Query("SELECT * FROM devices WHERE isFavorite = 1")
+    fun getFavoriteDevices(): Flow<List<DeviceEntity>>
 }

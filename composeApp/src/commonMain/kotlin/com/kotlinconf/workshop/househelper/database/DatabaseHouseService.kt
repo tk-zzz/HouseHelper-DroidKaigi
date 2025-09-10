@@ -97,11 +97,13 @@ class DatabaseHouseService(private val database: AppDatabase) : HouseService {
     }
 
     override suspend fun toggleFavorite(deviceId: String): Boolean {
-        // TODO implement toggling the state in the database
+        database.deviceDao().toggleFavorite(deviceId)
         return false
     }
 
     override fun getFavoriteDevices(): Flow<List<Device>> {
-        return flowOf(emptyList())
+        return database.deviceDao().getFavoriteDevices().map {
+            deviceEntities -> deviceEntities.map { it.toDevice() }
+        }
     }
 }
